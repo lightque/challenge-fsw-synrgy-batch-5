@@ -50,8 +50,35 @@ p {
   color: #000000;
 }
 
+label {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #000000;
+}
+
+input[type=checkbox]:checked {
+  background-color: #cfd4ed;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0;
+}
+
 .pt-6 {
-  padding-top: 6rem !important;
+  padding-top: 5rem !important;
+}
+
+.mt-6 {
+  margin-top: 6rem !important;
+}
+
+.btn {
+  background-color: #5cb85f;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 8px 12px;
 }
 
 /* HEADER */
@@ -71,44 +98,21 @@ header {
   color: #0d28a6;
 }
 
-.navbar-collapse {
-  align-items: flex-end;
-}
 
-.btn {
-  border: none;
-  background-color: #5cb85f;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 2px;
-  font-family: "Helvetica Bold";
-}
-
-.btn:hover {
-  background-color: #42a045;
-  color: white;
+/* Our Services Section */
+.form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%230D28A6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
 
 #our-service-section{
   margin-bottom: 100px;
 }
 
-.checklist {
-  background-color: #CFD4ED;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
+.form-check-input {
+  background-color: #cfd4ed;
+  border-color: #cfd4ed;
 }
 
-.checklist i {
-  color: #132da8;
-  width: 16px;
-  height: 16px;
-  border-top: none;
-  border-left: none;
-  transform: translateX(2px) rotate(135deg);
-}
 #why-us-section {
   margin-bottom: 100px;
 }
@@ -370,8 +374,7 @@ footer {
   }
 }
 
-@media screen and (min-width:1024px){
-    ::-webkit-scrollbar{
+::-webkit-scrollbar{
         -webkit-appearance:none;
         width:14px;
         height:5px
@@ -389,4 +392,3 @@ footer {
     ::-webkit-scrollbar-thumb:hover{
         background-color:rgba(0,0,0,.25)
     }
-}
