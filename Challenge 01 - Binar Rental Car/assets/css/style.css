@@ -139,12 +139,9 @@ header {
   border: 1px solid #c4c4c4;
   width: 32px;
   height: 32px;
-  /* padding: 1rem; */
   border-radius: 50%;
-
   align-items: center;
   justify-content: center;
-  /* background-color: #5cb85f; */
 }
 
 .carousel-button-content::after {
