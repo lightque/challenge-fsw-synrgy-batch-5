@@ -10,7 +10,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-var swiper = new Swiper(".carouse-content", {
+var swiper = new Swiper(".carousel-container__content", {
   loop: true,
   slidesPerView: "auto",
   centeredSlides: true,
